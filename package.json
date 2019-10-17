@@ -1,0 +1,34 @@
+{
+  "name": "recharge-api-node",
+  "version": "1.0.0",
+  "description": "Recharge API bindings for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saudslm/recharge-api-node.git"
+  },
+  "keywords": [
+    "Recharge",
+    "API",
+    "Client"
+  ],
+  "author": "“Saud <saudslm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saudslm/recharge-api-node/issues"
+  },
+  "homepage": "https://github.com/saudslm/recharge-api-node#readme",
+  "dependencies": {
+    "got": "^9.6.0",
+    "lodash": "^4.17.15",
+    "qs": "^6.9.0",
+    "stopcock": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0"
+  }
+}
