@@ -31,4 +31,9 @@ Address.prototype.removeDiscount = function removeDiscount(address_id, params){
     return this.recharge.request(url, 'POST', this.key, params);
 }
 
+Address.prototype.addOneTimeProduct = function addOneTimeProduct(address_id, params){
+    const url = this.buildUrl(address_id, undefined, 'onetimes');
+    return this.recharge.request(url, 'POST', 'onetimes', params);
+}
+
 module.exports = Address;

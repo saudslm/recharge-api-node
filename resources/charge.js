@@ -7,7 +7,7 @@ const base = require('../mixins/base');
 const baseChild = require('../mixins/base-child');
 
 /**
- * Creates a Product instance.
+ * Creates a Charge instance.
  *
  * @param {Recharge} recharge Reference to the Recharge instance
  * @constructor
@@ -52,7 +52,7 @@ Charge.prototype.skip = function(id, params) {
  * Unskip charge for given charge id.
  *
  * @param {Number} id Charge ID
- * @param {Object} params {'subscription_id': 12345553}
+ * @param {Object} params {'subscription_id': 12345553}, look at the documentation for more details.
  * @return {Promise} Promise that resolves with the result
  * @public
  */
@@ -62,10 +62,10 @@ Charge.prototype.unskip = function(id, params) {
 };
 
 /**
- * Unskip charge for given charge id.
+ * Refund charge for given charge id.
  *
  * @param {Number} id Charge ID
- * @param {Object} params {'subscription_id': 12345553}
+ * @param {Object} params {'subscription_id': 12345553}, look at the documentation for more details.
  * @return {Promise} Promise that resolves with the result
  * @public
  */

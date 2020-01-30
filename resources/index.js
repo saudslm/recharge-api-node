@@ -11,7 +11,8 @@ const map = {
   subscription: 'subscription',
   webhook: 'webhook',
   shop: 'shop',
-  order: 'order'
+  order: 'order',
+  oneTime: 'one-time'
 };
 
 /**

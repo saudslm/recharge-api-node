@@ -5,7 +5,7 @@ const qs = require('qs');
 
 /**
  * This provides methods used by resources that have no relationships with
- * other resources. It's not meant to be used directly.
+ * other resources. It's meant to be used directly.
  *
  * @mixin
  */

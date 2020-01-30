@@ -92,6 +92,7 @@ recharge.subscription
   - `validate(params)`
   - `addDiscount(id, params)`
   - `removeDiscount(id, params)`
+  - `addOneTimeProduct(id, params)`
 - [charge](https://developer.rechargepayments.com/#charges)
   - `count()`
   - `list([params])`
@@ -135,6 +136,12 @@ recharge.subscription
   - `list([params])`
   - `get(id[, params])`
   - `create(params)`
+  - `update(id, params)`
+  - `delete(id)`
+- [oneTime](https://developer.rechargepayments.com/#one-time-products)
+  - `list([params])`
+  - `get(id[, params])`
+  - `create(address_id, params)`
   - `update(id, params)`
   - `delete(id)`
 - [order](https://developer.rechargepayments.com/#orders)
