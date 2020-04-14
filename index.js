@@ -70,8 +70,6 @@ Recharge.prototype.updateLimits = function updateLimits(header) {
   callLimits.current = limits[0];
   callLimits.max = limits[1];
 
-  console.log('callLimits', callLimits);
-
   this.emit('callLimits', callLimits);
 };
 
@@ -88,21 +86,20 @@ Recharge.prototype.updateLimits = function updateLimits(header) {
 Recharge.prototype.request = function request(url, method, key, params) {
     const options = assign({
       timeout: this.options.timeout,
-      json: true,
       retries: 0,
-      method
+      method,
+      responseType: 'json'
     }, url);
 
     options.headers['User-Agent'] = `${pkg.name}/${pkg.version}`;
+    options.headers['Content-Type'] = 'application/json';
 
     if (this.options.apiKey) {
       options.headers['X-Recharge-Access-Token'] = this.options.apiKey;
     }
 
-    if (params) {
-      //const body = key ? { [key]: params } : params;
-
-      options.headers['Content-Type'] = 'application/json';
+    if (typeof params != 'undefined') {
+      options.json = true;
       options.body = params;
     }
 

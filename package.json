@@ -22,13 +22,13 @@
   },
   "homepage": "https://github.com/saudslm/recharge-api-node#readme",
   "dependencies": {
-    "got": "^9.6.0",
+    "got": "^10.7.0",
     "lodash": "^4.17.15",
-    "qs": "^6.9.0",
+    "qs": "^6.9.3",
     "stopcock": "^1.1.0"
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "jest": "^24.9.0"
+    "eslint": "^6.8.0",
+    "jest": "^25.3.0"
   }
 }
