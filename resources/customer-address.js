@@ -24,6 +24,11 @@ assign(CustomerAddress.prototype, pick(baseChild, [
     'buildUrl'
 ]));
 
+CustomerAddress.prototype.create = function list(customerId, params) {
+    const url = this.buildUrl(customerId);
+    return this.recharge.request(url, 'POST', this.name, params);
+};
+
 CustomerAddress.prototype.list = function list(customerId, params) {
     const url = this.buildUrl(customerId, undefined, params);
     return this.recharge.request(url, 'GET', this.name);

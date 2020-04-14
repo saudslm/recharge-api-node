@@ -86,7 +86,6 @@ recharge.subscription
   - `count()`
   - `list([params])`
   - `get(id[, params])`
-  - `create(params)`
   - `update(id, params)`
   - `delete(id)`
   - `validate(params)`
@@ -112,6 +111,7 @@ recharge.subscription
   - `get(id[, params])`
 - [customerAddress](https://developer.rechargepayments.com/#list-addresses)
   - `list(customer_id[, params])`
+  - `create(customer_id, params)`
 - [customer](https://developer.rechargepayments.com/#customers)
   - `count()`
   - `list([params])`

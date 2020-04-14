@@ -11,7 +11,14 @@ function Address(recharge){
     this.key = 'address';
 }
 
-assign(Address.prototype, base);
+assign(Address.prototype, pick(base, [
+    'buildUrl',
+    'get',
+    'list',
+    'count',
+    'update',
+    'delete'
+]));
 
 /**
  * Address validation works only for USA addresses.
