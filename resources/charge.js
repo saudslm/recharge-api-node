@@ -57,7 +57,7 @@ Charge.prototype.skip = function(id, params) {
  * @public
  */
 Charge.prototype.unskip = function(id, params) {
-    const url = this.buildUrl(id, undefined, 'skip');
+    const url = this.buildUrl(id, undefined, 'unskip');
     return this.recharge.request(url, 'POST', this.key, params);
 };
 
