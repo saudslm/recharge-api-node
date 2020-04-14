@@ -1,2 +1,4 @@
 node_modules
-test.js
+demo.js
+/tests
+/naive

@@ -17,7 +17,7 @@ assign(Webhook.prototype, base);
 
 Webhook.prototype.validate = function validate(secret, body, received_digest){
     const hash = crypto.createHmac('sha256', secret)
-                .update(body)
+                .update(JSON.stringify(body))
                 .digest('hex');
     return hash === received_digest;
 }
