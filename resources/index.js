@@ -6,13 +6,14 @@ const map = {
   collection: 'collection',
   customer: 'customer',
   customerAddress: 'customer-address',
+  discount: 'discount',
   metafield: 'metafield',
+  order: 'order',
+  oneTime: 'one-time',
   product: 'product',
   subscription: 'subscription',
-  webhook: 'webhook',
   shop: 'shop',
-  order: 'order',
-  oneTime: 'one-time'
+  webhook: 'webhook',
 };
 
 /**
