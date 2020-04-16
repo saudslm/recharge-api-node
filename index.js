@@ -99,8 +99,7 @@ Recharge.prototype.request = function request(url, method, key, params) {
     }
 
     if (typeof params != 'undefined') {
-      options.json = true;
-      options.body = params;
+      options.json = params;
     }
 
     return got(options).then(res => {
