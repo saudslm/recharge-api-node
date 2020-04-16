@@ -15,7 +15,7 @@ assign(Customer.prototype, base);
 
 Customer.prototype.getPaymentSources = function paymentSources(id) {
     const url = this.buildUrl(id, undefined, 'payment_sources');
-    return this.recharge.request(url, 'GET', this.name);
+    return this.recharge.request(url, 'GET', 'payment_sources');
 };
 
 module.exports = Customer;
