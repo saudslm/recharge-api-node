@@ -3,6 +3,7 @@
 const assign = require('lodash/assign');
 
 const base = require('../mixins/base');
+const pick = require('lodash/pick');
 
 function Address(recharge){
     this.recharge = recharge;
