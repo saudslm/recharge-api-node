@@ -3,6 +3,7 @@
 const map = {
   address: 'address',
   charge: 'charge',
+  checkout: 'checkout',
   collection: 'collection',
   customer: 'customer',
   customerAddress: 'customer-address',

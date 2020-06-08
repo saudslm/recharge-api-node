@@ -27,8 +27,8 @@ const base = {
      * @param {Object} [params] Query parameters
      * @return {Promise} Promise that resolves with the result
      */
-    create(params) {
-        const url = this.buildUrl();
+    create(params, query) {
+        const url = this.buildUrl(undefined, query);
         return this.recharge.request(url, 'POST', this.key, params);
     },
 
@@ -56,8 +56,8 @@ const base = {
      * @param {Object} params Record properties
      * @return {Promise} Promise that resolves with the result
      */
-    update(id, params) {
-        const url = this.buildUrl(id);
+    update(id, params, query) {
+        const url = this.buildUrl(id, query);
         return this.recharge.request(url, 'PUT', this.key, params);
     },
 

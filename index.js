@@ -115,7 +115,7 @@ Recharge.prototype.request = function request(url, method, key, params) {
           .then(() => this.request(newUrl, 'GET', key));
       }
 
-      if (key) return body[key];
+      if (key && body.hasOwnProperty(key)) return body[key];
       return body || {};
     }, err => {
       this.updateLimits(
