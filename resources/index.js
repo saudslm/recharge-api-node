@@ -2,6 +2,7 @@
 
 const map = {
   address: 'address',
+  asyncBatch: 'async-batch',
   charge: 'charge',
   checkout: 'checkout',
   collection: 'collection',

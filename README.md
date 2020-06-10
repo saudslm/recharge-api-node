@@ -92,6 +92,13 @@ recharge.subscription
   - `addDiscount(id, params)`
   - `removeDiscount(id, params)`
   - `addOneTimeProduct(id, params)`
+- [asyncBatch](https://developer.rechargepayments.com/#async-batches-alpha)
+  - `list([params])`
+  - `get(id[, params])`
+  - `create(params)`
+  - `addTasks(batch_id, params)`
+  - `tasks(batch_id)`
+  - `process(batch_id)`
 - [charge](https://developer.rechargepayments.com/#charges)
   - `count()`
   - `list([params])`
