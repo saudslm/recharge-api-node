@@ -19,7 +19,7 @@ Discount.prototype.addToAddress = function addToAddress(address_id, params) {
     return this.recharge.request(url, 'POST', 'address', params);
 };
 
-Discount.prototype.addToCharge = function addToCharge(charge_id) {
+Discount.prototype.addToCharge = function addToCharge(charge_id, params) {
     const path = `/charges/${charge_id}/apply_discount`;
     const url = assign({ path }, this.recharge.baseUrl);
     return this.recharge.request(url, 'POST', 'charge', params);
