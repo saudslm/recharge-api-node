@@ -20,7 +20,7 @@ Customer.prototype.getPaymentSources = function paymentSources(id) {
 
 Customer.prototype.getPortalUrl = function portalUrl(id) {
     const url = this.buildUrl(id, undefined, 'portal_url');
-    return this.recharge.request(url, 'GET', 'portal_url');
+    return this.recharge.request(url, 'GET');
 };
 
 module.exports = Customer;
