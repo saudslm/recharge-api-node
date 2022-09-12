@@ -133,6 +133,7 @@ recharge.subscription
   - `update(id, params)`
   - `delete(id)`
   - `getPaymentSources(id)`
+  - `getPortalUrl(id)`
 - [discount](https://developer.rechargepayments.com/#discounts)
   - `count()`
   - `list([params])`

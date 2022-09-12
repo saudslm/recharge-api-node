@@ -1,6 +1,6 @@
 {
-  "name": "recharge-api-node",
-  "version": "1.1.4",
+  "name": "@condenast/recharge-api-node",
+  "version": "1.1.6",
   "description": "Recharge API bindings for Node.js",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saudslm/recharge-api-node.git"
+    "url": "git+https://github.com/CondeNast/recharge-api-node.git"
   },
   "keywords": [
     "Recharge",
@@ -18,9 +18,9 @@
   "author": "“Saud <saudslm@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/saudslm/recharge-api-node/issues"
+    "url": "https://github.com/CondeNast/recharge-api-node/issues"
   },
-  "homepage": "https://github.com/saudslm/recharge-api-node#readme",
+  "homepage": "https://github.com/CondeNast/recharge-api-node#readme",
   "dependencies": {
     "got": "^10.7.0",
     "lodash": "^4.17.15",
