@@ -1,4 +1,5 @@
 # Recharge API Node.js
+
 Recharge API bindings for Node.js
 
 ## Installation:
@@ -10,7 +11,6 @@ $ npm install --save recharge-api-node
 ## API
 
 This module exports a constructor function which takes an options object.
-
 
 ### `Recharge(options)`
 
@@ -51,11 +51,11 @@ Throws an `Error` exception if the required options are missing.
 #### Example
 
 ```js
-const Recharge = require('recharge-api-node');
+const Recharge = require("recharge-api-node");
 
 const recharge = new Recharge({
-  apiKey: 'your-api-key',
-  secrete: 'your-app-secrete'
+  apiKey: "your-api-key",
+  secrete: "your-app-secrete",
 });
 ```
 
@@ -65,12 +65,13 @@ Every resource is accessed via your `recharge` instance:
 
 ```js
 const recharge = new Recharge({
-  apiKey: 'your-api-key',
-  secrete: 'your-app-secrete'
+  apiKey: "your-api-key",
+  secrete: "your-app-secrete",
 });
 
 // recharge.<resource_name>.<method_name>
 ```
+
 Each method returns a `Promise` that resolves with the result:
 
 ```js
@@ -112,7 +113,7 @@ recharge.subscription
   - `refund(id, params)`
   - `addDiscount(id, params)`
   - `removeDiscount(id, params)`
-- [checkout - BETA](https://developer.rechargepayments.com/#checkouts-pro) - **query_params object can be used in case of partial_shipping ex: {partial_shipping: 1}
+- [checkout - BETA](https://developer.rechargepayments.com/#checkouts-pro) - \*\*query_params object can be used in case of partial_shipping ex: {partial_shipping: 1}
   - `get(checkout_token[, params])`
   - `create(params[, query_params])`
   - `update(checkout_token, params[, query_params])`
@@ -137,14 +138,14 @@ recharge.subscription
 - [discount](https://developer.rechargepayments.com/#discounts)
   - `count()`
   - `list([params])`
-  - `get(id[, params])`
+  - `get(id, params)`
   - `create(params)`
   - `update(id, params)`
   - `delete(id)`
-  - `addToAddress(address_id[, params])`
-  - `removeFromAddress(address_id[, params])`
-  - `addToCharge(charge_id[, params])`
-  - `removeFromCharge(charge_id[, params])`
+  - `addToAddress(address_id, params)`
+  - `removeFromAddress(address_id, params)`
+  - `addToCharge(charge_id, params)`
+  - `removeFromCharge(charge_id, params)`
 - [metafield](https://developer.rechargepayments.com/#metafields)
   - `count()`
   - `list([params])`
@@ -186,7 +187,7 @@ recharge.subscription
   - `changeAddress(id, params)`
   - `cancel(id, params)`
   - `activate(id)`
-  - ```** 'swap product' end point can be triggered using 'update()' function```
+  - `** 'swap product' end point can be triggered using 'update()' function`
 - [webhook](https://developer.rechargepayments.com/#webhooks)
   - `count()`
   - `list([params])`
