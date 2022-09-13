@@ -19,7 +19,7 @@ Discount.prototype.addToAddress = function addToAddress(address_id, params) {
     return this.recharge.request(url, 'POST', 'address', params);
 };
 
-Discount.prototype.addToCharge = function addToCharge(charge_id) {
+Discount.prototype.addToCharge = function addToCharge(charge_id, params) {
     const path = `/charges/${charge_id}/apply_discount`;
     const url = assign({ path }, this.recharge.baseUrl);
     return this.recharge.request(url, 'POST', 'charge', params);
@@ -31,7 +31,7 @@ Discount.prototype.removeFromAddress = function removeFromAddress(address_id, pa
     return this.recharge.request(url, 'POST', 'address', params);
 };
 
-Discount.prototype.removeFromCharge = function removeFromCharge(charge_id) {
+Discount.prototype.removeFromCharge = function removeFromCharge(charge_id, params) {
     const path = `/charges/${charge_id}/remove_discount`;
     const url = assign({ path }, this.recharge.baseUrl);
     return this.recharge.request(url, 'POST', 'charge', params);
