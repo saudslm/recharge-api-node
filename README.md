@@ -11,7 +11,6 @@ $ npm install --save recharge-api-node
 
 This module exports a constructor function which takes an options object.
 
-
 ### `Recharge(options)`
 
 Creates a new `Recharge` instance.
@@ -141,10 +140,10 @@ recharge.subscription
   - `create(params)`
   - `update(id, params)`
   - `delete(id)`
-  - `addToAddress(address_id[, params])`
-  - `removeFromAddress(address_id[, params])`
-  - `addToCharge(charge_id[, params])`
-  - `removeFromCharge(charge_id[, params])`
+  - `addToAddress(address_id, params)`
+  - `removeFromAddress(address_id, params)`
+  - `addToCharge(charge_id, params)`
+  - `removeFromCharge(charge_id, params)`
 - [metafield](https://developer.rechargepayments.com/#metafields)
   - `count()`
   - `list([params])`
